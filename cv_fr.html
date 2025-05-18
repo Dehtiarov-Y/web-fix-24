@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yevhenii Dehtiarov - CV</title>  
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+      font-family: "Century Gothic", sans-serif;
+      line-height: 1.6;
+    }
+    
+    .cv-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+      color: #ffb347;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 100;
+      font-size: 2rem;
+    }
+    
+    .cv-preview {
+      width: 100%;
+      max-height: 80vh;
+      overflow: auto;
+      margin: 1.5rem 0;
+      border: 1px solid #444;
+      border-radius: 4px;
+    }
+    
+    .cv-preview img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .cv-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .cv-button {
+      padding: 0.75rem 1.5rem;
+      background-color: #ffb347;
+      color: #2a2a2a;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+      min-width: 160px;
+    }
+    
+    .cv-button:hover {
+      background-color: #e69c3e;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media (max-width: 768px) {
+      .cv-container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+      
+      h1 {
+        font-size: 1.75rem;
+      }
+      
+      .cv-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      
+      .cv-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <h1>Curriculum Vitae</h1>  
+    
+    <div class="cv-preview">
+      <img src="./Yevhenii DEHTIAROV.png" alt="CV de Yevhenii Dehtiarov" loading="lazy">  
+    </div>
+    
+    <div class="cv-actions">
+      <a href="./Yevhenii DEHTIAROV.png" download="Yevhenii_Dehtiarov_CV.png" class="cv-button">Télécharger le CV</a>
+      <a href="index.html" class="cv-button">Retour à l'accueil</a>
+    </div>
+  </div>
+</body>
+</html>

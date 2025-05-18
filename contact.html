@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="Website icon" type="png"  href="./favicon-black-white.png">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #101010;
+      font-family: "Century Gothic", sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 400px;
+      padding: 2em;
+      background-color: #171717;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: .4s ease-in-out;
+    }
+
+    .form:hover {
+      transform: scale(1.02);
+      border: 1px solid black;
+    }
+
+    #heading {
+      text-align: center;
+      margin-bottom: 1em;
+      color: #fff;
+      font-size: 1.5em;
+    }
+
+    .field {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      background-color: #2d2d2d;
+      border-radius: 25px;
+      padding: 0.6em 1em;
+      box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .input-icon {
+      height: 1.3em;
+      width: 1.3em;
+      color: white;
+    }
+
+    .input-field, textarea {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      color: #f0f0f0;
+      font-size: 1em;
+      resize: none;
+      background-color: transparent;
+    }
+
+    textarea::placeholder,
+    .input-field::placeholder {
+      color: #ccc;
+    }
+
+    textarea {
+      padding-top: 0.5em;
+    }
+
+    .form .btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5em;
+    }
+
+    .button1 {
+      padding: 0.6em 1.5em;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background-color: #252525;
+      color: white;
+      font-size: 1em;
+      transition: .3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .button1:hover {
+      background-color: #000;
+    }
+
+    .back-top-left {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .back-button {
+      background-color: #252525;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.95em;
+      transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+    .back-button:hover {
+      background-color: #000;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+  <!-- Кнопка возврата -->
+  <div class="back-top-left">
+    <a href="index_en.html" class="back-button">
+      <i class="fas fa-arrow-left"></i> Return to main page</a>
+  </div>
+
+  <!-- Форма -->
+  <form class="form" action="https://formspree.io/f/mdkgolgy" method="POST">
+    <p id="heading">Leave A Message</p>
+
+    <div class="field">
+      <i class="fas fa-user input-icon"></i>
+      <input class="input-field" type="text" name="name" placeholder="Name" required>
+    </div>
+
+    <div class="field">
+      <i class="fas fa-envelope input-icon"></i>
+      <input class="input-field" type="email" name="email" placeholder="Email" required>
+    </div>
+
+    <div class="field" style="align-items: flex-start;">
+      <i class="fas fa-comment input-icon" style="margin-top: 0.4em;"></i>
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+    </div>
+
+    <div class="btn">
+      <button class="button1" type="submit">Send me a message</button>
+    </div>
+  </form>
+   
+
+</body>
+</html>

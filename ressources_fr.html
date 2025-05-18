@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="Website icon" type="png"  href="./favicon-black-white.png">
+  <title>Ressources de Conception</title>
+  <link href="https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Century Gothic', sans-serif;
+      background-color: #1f1f1f;
+      background-size: cover;
+      color: #f0f0f0;
+      line-height: 1.6;
+      padding: 50px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background-color: #020200d9;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 50px;
+      font-weight: 100;
+      color: #ffb347;
+      animation: fadeInDown 1s ease;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+
+    .card {
+      background: rgba(60, 50, 0, 0.5);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03) translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ffdaa5;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #cecece;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: #ffb347;
+      color: white;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #a0702d;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #885f26;
+    }
+
+    .back-top-left {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .back-button {
+      background-color: #ffb347;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 18px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;
+      transition: background 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+      color: white;
+      font-family: 'Century Gothic', sans-serif;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .back-button:hover {
+      background-color: #a0702d;
+      transform: scale(1.05);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- BACK-BUTTON -->
+  <div class="back-top-left">
+    <a href="index.html" class="back-button">
+      <i class="fas fa-arrow-left"></i>Retour</a>
+  </div>
+
+  <!-- MAIN PART -->
+  <div class="container">
+    <h1>Ressources utilisées pour créer le site</h1>
+    <div class="card-grid">
+
+      <div class="card">
+        <h2>Graphiste CSS Animations</h2>
+        <p>Techniques d'animation CSS créatives et inspiration pour le design web moderne.</p>
+        <a href="https://graphiste.com/blog/animations-css/" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>Animate.css</h2>
+        <p>Bibliothèque pour des animations CSS fluides et faciles avec déclenchement par classe.</p>
+        <a href="https://animate.style/" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>TemplatesJungle</h2>
+        <p>Modèles HTML gratuits pour professionnels créatifs, faciles à personnaliser et stylisés.</p>
+        <a href="https://templatesjungle.com/" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>Uiverse Components</h2>
+        <p>De beaux composants UI créés par la communauté, prêts à l'emploi et personnalisables.</p>
+        <a href="https://uiverse.io/Saad3092003/pretty-quail-56" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>Neumorphism.io</h2>
+        <p>Créez des éléments UI doux avec le style de design neumorphisme et exportez en CSS.</p>
+        <a href="https://neumorphism.io/#49ab8e" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>Unsplash</h2>
+        <p>Photos haute résolution gratuites pour vos designs, sites web, arrière-plans et plus.</p>
+        <a href="https://unsplash.com" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>MDN Web Docs</h2>
+        <p>Documentation complète et ressources d'apprentissage pour le développement web.</p>
+        <a href="https://developer.mozilla.org/fr/" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>ChatGPT par OpenAI</h2>
+        <p>Assistant IA pour l'écriture, l'apprentissage, le codage et la créativité.</p>
+        <a href="https://chat.openai.com/" target="_blank">Visiter le site</a>
+      </div>
+      
+      <div class="card">
+        <h2>TikTok</h2>
+        <p>Plateforme populaire pour partager des vidéos courtes, tendances et créativité.</p>
+        <a href="https://www.tiktok.com/" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>Chaînes YouTube</h2>
+        <p>Plateforme de partage vidéo pour tutoriels, divertissement et inspiration.</p>
+        <a href="https://www.youtube.com/" target="_blank">Visiter le site</a>
+      </div>
+
+      <div class="card">
+        <h2>Web-Leb</h2>
+        <p>Éléments UI prêts à l'emploi et extraits de code HTML/CSS/JS pour designers.</p>
+        <a href="https://web-leb.com/" target="_blank">Visiter le site</a>
+      </div>
+      
+      <div class="card">
+        <h2>CodePen</h2>
+        <p>Éditeur de code en ligne et communauté pour développeurs front-end.</p>
+        <a href="https://codepen.io/" target="_blank">Visiter le site</a>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    © 2025 Yevhenii Dehtiarov - Tous droits réservés
+  </footer>
+</body>
+</html>
